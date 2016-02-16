@@ -2,28 +2,182 @@
     ViewBag.Title = "Home Page";
 }
 
-@*<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-</div>*@
+<div class="row" style="margin-bottom:20px; border-bottom: 2px solid #ccc; padding-bottom: 15px">
+    <div class="col-md-4">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <h4>Welcome rbnbghl</h4>
+                </div>
+            </div>
+            <div class="col-md-6 text-right">
+                <button class="btn btn-primary" type="button">
+                    ELITE LEVEL <span class="badge" style="background-color: #fff; color: #000; margin-left: 5px;">4</span>
+                </button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <a href="#" class="thumbnail">
+                    <img alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUyZWI2NjAyNzYgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTJlYjY2MDI3NiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style=" width: 100%; display: block;">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-8">
+        <fieldset>
+            <legend>NEWS</legend>
+            @for (var i = 0; i < 4; i++)
+            {
+                <div class="row" style="margin-bottom: 10px">
+                    <div class="col-xs-2 col-md-2">
+                        <a href="#" class="thumbnail">
+                            <img alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUyZWI2NjAyNzYgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTJlYjY2MDI3NiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 80px; width: 100%; display: block;">
+                        </a>
+                    </div>
+                    <div class="col-md-10 col-xs-11">
+                        <p>awdpjwapwjapjdwadjdjpjdwpj</p>
+                    </div>
+                </div>
+            }
+        </fieldset>
+    </div>
+</div>
 
 <div class="row">
     <div class="col-md-4">
-        <h2>Upcoming raids</h2>
-        <p>
-            In this section you'll find information on the upcoming raids. This is also where you sign up for a raid, bring the pain!
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+        <fieldset>
+            <legend>Upcoming raids</legend>
+            <!-- RAID -->
+            <div class="container" style="padding: 10px;margin-bottom: 10px;background-color:#f6f6f6;">
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <h4>The taken king</h4>
+                    </div>
+                    <div class="col-md-6 text-right" style="padding-top: 10px;">
+                        <p>
+                            <i class=" glyphicon glyphicon-calendar">
+                            </i> 2016-03-21 <i class="glyphicon glyphicon-time"></i> 19:00
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>This is the first time we'll try the taken king, let's fucking blast him!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <a class="btn btn-default"><i class="glyphicon glyphicon-user"></i> Show players</a>
+                    </div>
+
+                    <div class="col-md-6 text-right">
+                        <a class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i> Sign up</a>
+                    </div>
+                </div>
+            </div>
+            <!-- END RAID -->
+            <!-- RAID -->
+            <div class="container" style="padding: 10px;margin-bottom: 10px;">
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <h4>The taken king</h4>
+                    </div>
+                    <div class="col-md-6 text-right" style="padding-top: 10px;">
+                        <p>
+                            <i class=" glyphicon glyphicon-calendar">
+                            </i> 2016-03-21 <i class="glyphicon glyphicon-time"></i> 19:00
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>This is the first time we'll try the taken king, let's fucking blast him!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <a class="btn btn-default"><i class="glyphicon glyphicon-user"></i> Show players</a>
+                    </div>
+
+                    <div class="col-md-6 text-right">
+                        <a class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i> Sign up</a>
+                    </div>
+                </div>
+            </div>
+            <!-- END RAID -->
+
+            <!-- RAID -->
+            <div class="container" style="padding: 10px;margin-bottom: 10px;background-color:#f6f6f6;">
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <h4>The taken king</h4>
+                    </div>
+                    <div class="col-md-6 text-right" style="padding-top: 10px;">
+                        <p>
+                            <i class=" glyphicon glyphicon-calendar">
+                            </i> 2016-03-21 <i class="glyphicon glyphicon-time"></i> 19:00
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>This is the first time we'll try the taken king, let's fucking blast him!</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-left">
+                        <a class="btn btn-default"><i class="glyphicon glyphicon-user"></i> Show players</a>
+                    </div>
+
+                    <div class="col-md-6 text-right">
+                        <a class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i> Sign up</a>
+                    </div>
+                </div>
+            </div>
+            <!-- END RAID -->
+        </fieldset>
+
+
+        <p class="text-right"><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">More raids &raquo;</a></p>
     </div>
     <div class="col-md-4">
-        <h2>Our members</h2>
-        <p>If you just want to take a quick look on our characters or if you'd like to see what our individual favourite games, this is the place! </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+        <!-- member photos -->
+        <div class="row">
+            <div class="col-xs-6 col-md-6">
+                <a href="#" class="thumbnail">
+                    <img alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUyZWI2NjAyNzYgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTJlYjY2MDI3NiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+                </a>
+            </div>
+
+            <div class="col-xs-6 col-md-6">
+                <a href="#" class="thumbnail">
+                    <img alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUyZWI2NjAyNzYgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTJlYjY2MDI3NiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+                </a>
+            </div>
+        </div>
+        <!-- end of member photos-->
+
+        <div class="row">
+            <h2>Our members</h2>
+            <p>If you just want to take a quick look on our characters or if you'd like to see what our individual favourite games, this is the place! </p>
+            <p>
+                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a>
+            </p>
+        </div>
     </div>
     <div class="col-md-4">
-        <h2>The games</h2>
-        <p>We are all about gaming - well on PS4 that is - and here is all the games we play. Want to play us? Hit us up!</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <a href="#" class="thumbnail">
+                    <img alt="100%x180" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9InllcyI/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTcxIiBoZWlnaHQ9IjE4MCIgdmlld0JveD0iMCAwIDE3MSAxODAiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjwhLS0KU291cmNlIFVSTDogaG9sZGVyLmpzLzEwMCV4MTgwCkNyZWF0ZWQgd2l0aCBIb2xkZXIuanMgMi42LjAuCkxlYXJuIG1vcmUgYXQgaHR0cDovL2hvbGRlcmpzLmNvbQooYykgMjAxMi0yMDE1IEl2YW4gTWFsb3BpbnNreSAtIGh0dHA6Ly9pbXNreS5jbwotLT48ZGVmcz48c3R5bGUgdHlwZT0idGV4dC9jc3MiPjwhW0NEQVRBWyNob2xkZXJfMTUyZWI2NjAyNzYgdGV4dCB7IGZpbGw6I0FBQUFBQTtmb250LXdlaWdodDpib2xkO2ZvbnQtZmFtaWx5OkFyaWFsLCBIZWx2ZXRpY2EsIE9wZW4gU2Fucywgc2Fucy1zZXJpZiwgbW9ub3NwYWNlO2ZvbnQtc2l6ZToxMHB0IH0gXV0+PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImhvbGRlcl8xNTJlYjY2MDI3NiI+PHJlY3Qgd2lkdGg9IjE3MSIgaGVpZ2h0PSIxODAiIGZpbGw9IiNFRUVFRUUiLz48Zz48dGV4dCB4PSI2MSIgeT0iOTQuNSI+MTcxeDE4MDwvdGV4dD48L2c+PC9nPjwvc3ZnPg==" data-holder-rendered="true" style="height: 180px; width: 100%; display: block;">
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <h2>The games</h2>
+            <p>We are all about gaming - well on PS4 that is - and here is all the games we play. Want to play us? Hit us up!</p>
+            <p>
+                <a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a>
+            </p>
+        </div>
     </div>
 </div>
