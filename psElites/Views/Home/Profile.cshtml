@@ -1,0 +1,16 @@
+﻿@model psElites.ViewModel.User.ProfileViewModel
+
+@{
+    ViewBag.Title = "About";
+}
+<h2>@Html.Raw(string.Format("{0}'s profile", Model.GamerName))</h2>
+
+
+<h3>Random games from collection</h3>
+
+@foreach(var g in Model.RandGames)
+{
+    <div class="row">
+        <h5>@g.Name</h5>
+    </div>
+}
